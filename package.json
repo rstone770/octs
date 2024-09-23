@@ -1,0 +1,24 @@
+{
+  "name": "@rstone770/octs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "husky install",
+    "start": "vite",
+    "build": "vite build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.7",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.7"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json,js,html}": "prettier --write"
+  },
+  "packageManager": "yarn@4.5.0"
+}
